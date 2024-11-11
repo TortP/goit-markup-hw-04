@@ -438,9 +438,9 @@ img {
   color: #f4f4fd;
 }
 
-.box1,
-.box2,
-.box3 {
+.footer-box1,
+.footer-box2,
+.footer-box3 {
   flex: 1;
   padding: 20px;
   color: white;
