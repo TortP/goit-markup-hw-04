@@ -117,6 +117,7 @@ img {
   padding-bottom: 24px;
   padding-left: 0;
   margin: 0;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-link:hover,
@@ -135,6 +136,7 @@ img {
   padding-top: 24px;
   padding-bottom: 24px;
   float: right;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-info:hover,
@@ -164,6 +166,7 @@ img {
   color: var(--slate);
   text-decoration: none;
   list-style: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address:hover,
@@ -212,6 +215,7 @@ img {
   height: 56px;
   border-radius: 4px;
   margin: 48px auto;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .cta-button:hover,
