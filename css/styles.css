@@ -515,6 +515,7 @@ img {
 .footer .container {
   display: flex;
   gap: 10px;
+  align-items: baseline;
 }
 
 .footer-text {
@@ -543,14 +544,16 @@ img {
   color: var(--white);
   text-align: left;
   padding: 0;
-  margin: 0;
+  margin-right: 120px;
 }
 
 .footer .social {
   gap: 16px;
   justify-content: left;
+  font-weight: 500;
 }
 
-.footer .social-link:hover {
+.footer .social-link:hover,
+.footer .social-link:focus {
   background-color: var(--green);
 }
