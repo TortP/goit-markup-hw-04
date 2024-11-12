@@ -117,12 +117,19 @@ img {
   padding-bottom: 24px;
   padding-left: 0;
   margin: 0;
+  border-bottom: 4px solid transparent;
+  transition: border-color 0.3s ease;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-link:hover,
 .menu-link:focus {
   color: var(--ocean);
+}
+
+.active-seite {
+  color: var(--ocean);
+  border-bottom: 4px solid var(--iris);
 }
 
 .contact-info {
@@ -388,6 +395,32 @@ img {
 .portfolio-item {
   background-color: var(--white);
   border-top: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-overlay {
+  height: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: var(--iris);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  transition: top 0.4s ease;
+  z-index: 1;
+  opacity: 0;
+}
+
+.portfolio-item:hover .portfolio-overlay {
+  top: 0;
+  opacity: 1;
+}
+.overlay-container {
+  position: relative;
+  overflow: hidden;
 }
 
 .portfolio-title {
@@ -439,7 +472,7 @@ img {
 }
 
 .footer .logo-footer {
-  color: #f4f4fd;
+  color: var(--white);
 }
 
 .footer-box1,
@@ -447,8 +480,16 @@ img {
 .footer-box3 {
   flex: 1;
   padding: 20px;
-  color: white;
+  color: var(--white);
   text-align: left;
   padding: 0;
   margin: 0;
+}
+
+.footer .social {
+  gap: 16px;
+}
+
+.footer .social-link:hover {
+  background-color: var(--green);
 }
